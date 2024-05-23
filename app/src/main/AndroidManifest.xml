@@ -22,6 +22,10 @@
             android:name=".Create_New_Advert"
             android:exported="false" />
         <activity
+            android:name=".ShowAllItemOnMap"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -30,6 +34,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}"
+            />
+
     </application>
 
 </manifest>
